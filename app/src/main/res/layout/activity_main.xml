@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputCountry"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-71dp"
+        android:layout_marginStart="15dp"
+        android:text="Enter the country:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <EditText
+        android:id="@+id/inputCountry"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="81dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="156dp"
+            android:text="Year"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/year"
+            android:layout_centerHorizontal="true"
+            android:text="Month"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="76dp"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/year"
+            android:layout_marginEnd="16dp"
+            android:text="Day"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/inputYear"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="187dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/inputMonth"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/inputYear"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/inputDay"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/inputYear"
+            android:ems="10"
+            android:inputType="date" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:text="CHECK" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="168dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+</RelativeLayout>
